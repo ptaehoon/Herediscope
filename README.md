@@ -6,5 +6,5 @@ Our group created an iOS app that ask users questions to predict their possibili
 
 Our members used simple Mendelian genetics to calculate the possibilities. After few questions, the app presents a possible percentage of obtaining those traits or diseases. 
 
-#How it Works
+# How it Works
 
