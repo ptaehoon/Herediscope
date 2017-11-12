@@ -1,0 +1,695 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		201885891FA5762000A2EC26 /* DetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201885881FA5762000A2EC26 /* DetailedViewController.swift */; };
+		201885901FA5983200A2EC26 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2018858D1FA5983000A2EC26 /* QuestionViewController.swift */; };
+		201885921FA5983200A2EC26 /* QuestionnaireViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2018858F1FA5983100A2EC26 /* QuestionnaireViewController.swift */; };
+		201885961FA59D2900A2EC26 /* DiseaseDict.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201885951FA59D2900A2EC26 /* DiseaseDict.swift */; };
+		2023B8FB1FA42ECE00AEA52F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2023B8FA1FA42ECE00AEA52F /* AppDelegate.swift */; };
+		2023B8FD1FA42ECE00AEA52F /* YourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2023B8FC1FA42ECE00AEA52F /* YourViewController.swift */; };
+		2023B8FF1FA42ECE00AEA52F /* ChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2023B8FE1FA42ECE00AEA52F /* ChildViewController.swift */; };
+		2023B9021FA42ECE00AEA52F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2023B9001FA42ECE00AEA52F /* Main.storyboard */; };
+		2023B9071FA42ECE00AEA52F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2023B9051FA42ECE00AEA52F /* LaunchScreen.storyboard */; };
+		2023B9121FA42ECE00AEA52F /* HerediscopeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2023B9111FA42ECE00AEA52F /* HerediscopeTests.swift */; };
+		2023B91D1FA42ECF00AEA52F /* HerediscopeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2023B91C1FA42ECF00AEA52F /* HerediscopeUITests.swift */; };
+		205321F31FA43C3F00683CBD /* DictionaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205321F21FA43C3F00683CBD /* DictionaryViewController.swift */; };
+		205321F51FA4412400683CBD /* Questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205321F41FA4412400683CBD /* Questions.swift */; };
+		205321F91FA444BC00683CBD /* Phenotypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205321F81FA444BC00683CBD /* Phenotypes.swift */; };
+		205321FB1FA44EA300683CBD /* AutosomalDominant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205321FA1FA44EA300683CBD /* AutosomalDominant.swift */; };
+		205321FD1FA44F1700683CBD /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 205321FC1FA44F1700683CBD /* logo.png */; };
+		205321FF1FA4515900683CBD /* Genotypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205321FE1FA4515900683CBD /* Genotypes.swift */; };
+		205322011FA4562900683CBD /* AutosomalRecessive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205322001FA4562900683CBD /* AutosomalRecessive.swift */; };
+		205322031FA4568400683CBD /* SexLinkedDominant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205322021FA4568400683CBD /* SexLinkedDominant.swift */; };
+		205322051FA4569E00683CBD /* Gender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205322041FA4569E00683CBD /* Gender.swift */; };
+		205322091FA459B000683CBD /* SexLinkedRecessive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205322081FA459B000683CBD /* SexLinkedRecessive.swift */; };
+		2053220C1FA462F500683CBD /* phenotypes.json in Resources */ = {isa = PBXBuildFile; fileRef = 2053220B1FA462F500683CBD /* phenotypes.json */; };
+		2053220E1FA4643700683CBD /* herediscope font.png in Resources */ = {isa = PBXBuildFile; fileRef = 2053220D1FA4643700683CBD /* herediscope font.png */; };
+		20E5528E1FA4BBF30018A5D0 /* Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E5528D1FA4BBF30018A5D0 /* Type.swift */; };
+		20E552901FA4C8B80018A5D0 /* SwiftyJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E5528F1FA4C8B80018A5D0 /* SwiftyJson.swift */; };
+		8ECF428C1FA547E400549FA9 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECF42821FA547E300549FA9 /* LoadingViewController.swift */; };
+		8ECF428F1FA547E400549FA9 /* diseaseDict.json in Resources */ = {isa = PBXBuildFile; fileRef = 8ECF42851FA547E300549FA9 /* diseaseDict.json */; };
+		8ECF42911FA547E400549FA9 /* QuestionPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECF42871FA547E300549FA9 /* QuestionPageView.swift */; };
+		8ECF42921FA547E400549FA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8ECF42881FA547E400549FA9 /* Assets.xcassets */; };
+		8ECF42931FA547E400549FA9 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECF42891FA547E400549FA9 /* ResultViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2023B90E1FA42ECE00AEA52F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2023B8EF1FA42ECE00AEA52F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2023B8F61FA42ECE00AEA52F;
+			remoteInfo = Herediscope;
+		};
+		2023B9191FA42ECF00AEA52F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2023B8EF1FA42ECE00AEA52F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2023B8F61FA42ECE00AEA52F;
+			remoteInfo = Herediscope;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		201885881FA5762000A2EC26 /* DetailedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedViewController.swift; sourceTree = "<group>"; };
+		2018858D1FA5983000A2EC26 /* QuestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
+		2018858F1FA5983100A2EC26 /* QuestionnaireViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionnaireViewController.swift; sourceTree = "<group>"; };
+		201885951FA59D2900A2EC26 /* DiseaseDict.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiseaseDict.swift; sourceTree = "<group>"; };
+		2023B8F71FA42ECE00AEA52F /* Herediscope.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Herediscope.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2023B8FA1FA42ECE00AEA52F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2023B8FC1FA42ECE00AEA52F /* YourViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourViewController.swift; sourceTree = "<group>"; };
+		2023B8FE1FA42ECE00AEA52F /* ChildViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildViewController.swift; sourceTree = "<group>"; };
+		2023B9011FA42ECE00AEA52F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2023B9061FA42ECE00AEA52F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2023B9081FA42ECE00AEA52F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2023B90D1FA42ECE00AEA52F /* HerediscopeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HerediscopeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2023B9111FA42ECE00AEA52F /* HerediscopeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HerediscopeTests.swift; sourceTree = "<group>"; };
+		2023B9131FA42ECE00AEA52F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2023B9181FA42ECF00AEA52F /* HerediscopeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HerediscopeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2023B91C1FA42ECF00AEA52F /* HerediscopeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HerediscopeUITests.swift; sourceTree = "<group>"; };
+		2023B91E1FA42ECF00AEA52F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		205321F21FA43C3F00683CBD /* DictionaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryViewController.swift; sourceTree = "<group>"; };
+		205321F41FA4412400683CBD /* Questions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Questions.swift; sourceTree = "<group>"; };
+		205321F81FA444BC00683CBD /* Phenotypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Phenotypes.swift; sourceTree = "<group>"; };
+		205321FA1FA44EA300683CBD /* AutosomalDominant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutosomalDominant.swift; sourceTree = "<group>"; };
+		205321FC1FA44F1700683CBD /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		205321FE1FA4515900683CBD /* Genotypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Genotypes.swift; sourceTree = "<group>"; };
+		205322001FA4562900683CBD /* AutosomalRecessive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutosomalRecessive.swift; sourceTree = "<group>"; };
+		205322021FA4568400683CBD /* SexLinkedDominant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SexLinkedDominant.swift; sourceTree = "<group>"; };
+		205322041FA4569E00683CBD /* Gender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gender.swift; sourceTree = "<group>"; };
+		205322081FA459B000683CBD /* SexLinkedRecessive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SexLinkedRecessive.swift; sourceTree = "<group>"; };
+		2053220B1FA462F500683CBD /* phenotypes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = phenotypes.json; sourceTree = "<group>"; };
+		2053220D1FA4643700683CBD /* herediscope font.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "herediscope font.png"; sourceTree = "<group>"; };
+		20E5528D1FA4BBF30018A5D0 /* Type.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Type.swift; sourceTree = "<group>"; };
+		20E5528F1FA4C8B80018A5D0 /* SwiftyJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyJson.swift; sourceTree = "<group>"; };
+		8ECF42821FA547E300549FA9 /* LoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		8ECF42851FA547E300549FA9 /* diseaseDict.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = diseaseDict.json; sourceTree = "<group>"; };
+		8ECF42871FA547E300549FA9 /* QuestionPageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionPageView.swift; sourceTree = "<group>"; };
+		8ECF42881FA547E400549FA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8ECF42891FA547E400549FA9 /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2023B8F41FA42ECE00AEA52F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2023B90A1FA42ECE00AEA52F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2023B9151FA42ECF00AEA52F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2018858A1FA5931A00A2EC26 /* Question Stuff */ = {
+			isa = PBXGroup;
+			children = (
+				2018858F1FA5983100A2EC26 /* QuestionnaireViewController.swift */,
+				2018858D1FA5983000A2EC26 /* QuestionViewController.swift */,
+				8ECF42871FA547E300549FA9 /* QuestionPageView.swift */,
+			);
+			path = "Question Stuff";
+			sourceTree = "<group>";
+		};
+		2018858B1FA5938F00A2EC26 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				2053220D1FA4643700683CBD /* herediscope font.png */,
+				205321FC1FA44F1700683CBD /* logo.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		2018858C1FA593B200A2EC26 /* Tunneled Stuff */ = {
+			isa = PBXGroup;
+			children = (
+				8ECF42821FA547E300549FA9 /* LoadingViewController.swift */,
+				8ECF42891FA547E400549FA9 /* ResultViewController.swift */,
+				201885881FA5762000A2EC26 /* DetailedViewController.swift */,
+			);
+			path = "Tunneled Stuff";
+			sourceTree = "<group>";
+		};
+		2023B8EE1FA42ECE00AEA52F = {
+			isa = PBXGroup;
+			children = (
+				2023B8F91FA42ECE00AEA52F /* Herediscope */,
+				2023B9101FA42ECE00AEA52F /* HerediscopeTests */,
+				2023B91B1FA42ECF00AEA52F /* HerediscopeUITests */,
+				2023B8F81FA42ECE00AEA52F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2023B8F81FA42ECE00AEA52F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2023B8F71FA42ECE00AEA52F /* Herediscope.app */,
+				2023B90D1FA42ECE00AEA52F /* HerediscopeTests.xctest */,
+				2023B9181FA42ECF00AEA52F /* HerediscopeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2023B8F91FA42ECE00AEA52F /* Herediscope */ = {
+			isa = PBXGroup;
+			children = (
+				2023B8FA1FA42ECE00AEA52F /* AppDelegate.swift */,
+				8ECF42881FA547E400549FA9 /* Assets.xcassets */,
+				8ECF42851FA547E300549FA9 /* diseaseDict.json */,
+				2023B8FC1FA42ECE00AEA52F /* YourViewController.swift */,
+				2023B8FE1FA42ECE00AEA52F /* ChildViewController.swift */,
+				205321F21FA43C3F00683CBD /* DictionaryViewController.swift */,
+				2018858A1FA5931A00A2EC26 /* Question Stuff */,
+				2018858C1FA593B200A2EC26 /* Tunneled Stuff */,
+				2023B9001FA42ECE00AEA52F /* Main.storyboard */,
+				2018858B1FA5938F00A2EC26 /* Images */,
+				2023B9051FA42ECE00AEA52F /* LaunchScreen.storyboard */,
+				2023B9081FA42ECE00AEA52F /* Info.plist */,
+				205322071FA456DE00683CBD /* DiseaseTypes */,
+				205322061FA456CC00683CBD /* Data Structures */,
+				20E5528F1FA4C8B80018A5D0 /* SwiftyJson.swift */,
+				2053220B1FA462F500683CBD /* phenotypes.json */,
+			);
+			path = Herediscope;
+			sourceTree = "<group>";
+		};
+		2023B9101FA42ECE00AEA52F /* HerediscopeTests */ = {
+			isa = PBXGroup;
+			children = (
+				2023B9111FA42ECE00AEA52F /* HerediscopeTests.swift */,
+				2023B9131FA42ECE00AEA52F /* Info.plist */,
+			);
+			path = HerediscopeTests;
+			sourceTree = "<group>";
+		};
+		2023B91B1FA42ECF00AEA52F /* HerediscopeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2023B91C1FA42ECF00AEA52F /* HerediscopeUITests.swift */,
+				2023B91E1FA42ECF00AEA52F /* Info.plist */,
+			);
+			path = HerediscopeUITests;
+			sourceTree = "<group>";
+		};
+		205322061FA456CC00683CBD /* Data Structures */ = {
+			isa = PBXGroup;
+			children = (
+				205321F41FA4412400683CBD /* Questions.swift */,
+				205321F81FA444BC00683CBD /* Phenotypes.swift */,
+				201885951FA59D2900A2EC26 /* DiseaseDict.swift */,
+				205321FE1FA4515900683CBD /* Genotypes.swift */,
+				205322041FA4569E00683CBD /* Gender.swift */,
+				20E5528D1FA4BBF30018A5D0 /* Type.swift */,
+			);
+			path = "Data Structures";
+			sourceTree = "<group>";
+		};
+		205322071FA456DE00683CBD /* DiseaseTypes */ = {
+			isa = PBXGroup;
+			children = (
+				205321FA1FA44EA300683CBD /* AutosomalDominant.swift */,
+				205322001FA4562900683CBD /* AutosomalRecessive.swift */,
+				205322021FA4568400683CBD /* SexLinkedDominant.swift */,
+				205322081FA459B000683CBD /* SexLinkedRecessive.swift */,
+			);
+			path = DiseaseTypes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2023B8F61FA42ECE00AEA52F /* Herediscope */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2023B9211FA42ECF00AEA52F /* Build configuration list for PBXNativeTarget "Herediscope" */;
+			buildPhases = (
+				2023B8F31FA42ECE00AEA52F /* Sources */,
+				2023B8F41FA42ECE00AEA52F /* Frameworks */,
+				2023B8F51FA42ECE00AEA52F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Herediscope;
+			productName = Herediscope;
+			productReference = 2023B8F71FA42ECE00AEA52F /* Herediscope.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2023B90C1FA42ECE00AEA52F /* HerediscopeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2023B9241FA42ECF00AEA52F /* Build configuration list for PBXNativeTarget "HerediscopeTests" */;
+			buildPhases = (
+				2023B9091FA42ECE00AEA52F /* Sources */,
+				2023B90A1FA42ECE00AEA52F /* Frameworks */,
+				2023B90B1FA42ECE00AEA52F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2023B90F1FA42ECE00AEA52F /* PBXTargetDependency */,
+			);
+			name = HerediscopeTests;
+			productName = HerediscopeTests;
+			productReference = 2023B90D1FA42ECE00AEA52F /* HerediscopeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2023B9171FA42ECF00AEA52F /* HerediscopeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2023B9271FA42ECF00AEA52F /* Build configuration list for PBXNativeTarget "HerediscopeUITests" */;
+			buildPhases = (
+				2023B9141FA42ECF00AEA52F /* Sources */,
+				2023B9151FA42ECF00AEA52F /* Frameworks */,
+				2023B9161FA42ECF00AEA52F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2023B91A1FA42ECF00AEA52F /* PBXTargetDependency */,
+			);
+			name = HerediscopeUITests;
+			productName = HerediscopeUITests;
+			productReference = 2023B9181FA42ECF00AEA52F /* HerediscopeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2023B8EF1FA42ECE00AEA52F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = Genesis;
+				TargetAttributes = {
+					2023B8F61FA42ECE00AEA52F = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 3LW8V63798;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+					};
+					2023B90C1FA42ECE00AEA52F = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 3LW8V63798;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2023B8F61FA42ECE00AEA52F;
+					};
+					2023B9171FA42ECF00AEA52F = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 3LW8V63798;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2023B8F61FA42ECE00AEA52F;
+					};
+				};
+			};
+			buildConfigurationList = 2023B8F21FA42ECE00AEA52F /* Build configuration list for PBXProject "Herediscope" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2023B8EE1FA42ECE00AEA52F;
+			productRefGroup = 2023B8F81FA42ECE00AEA52F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2023B8F61FA42ECE00AEA52F /* Herediscope */,
+				2023B90C1FA42ECE00AEA52F /* HerediscopeTests */,
+				2023B9171FA42ECF00AEA52F /* HerediscopeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2023B8F51FA42ECE00AEA52F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				205321FD1FA44F1700683CBD /* logo.png in Resources */,
+				8ECF42921FA547E400549FA9 /* Assets.xcassets in Resources */,
+				8ECF428F1FA547E400549FA9 /* diseaseDict.json in Resources */,
+				2053220E1FA4643700683CBD /* herediscope font.png in Resources */,
+				2023B9071FA42ECE00AEA52F /* LaunchScreen.storyboard in Resources */,
+				2053220C1FA462F500683CBD /* phenotypes.json in Resources */,
+				2023B9021FA42ECE00AEA52F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2023B90B1FA42ECE00AEA52F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2023B9161FA42ECF00AEA52F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2023B8F31FA42ECE00AEA52F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				205322051FA4569E00683CBD /* Gender.swift in Sources */,
+				8ECF42931FA547E400549FA9 /* ResultViewController.swift in Sources */,
+				205321FB1FA44EA300683CBD /* AutosomalDominant.swift in Sources */,
+				2023B8FF1FA42ECE00AEA52F /* ChildViewController.swift in Sources */,
+				205321F91FA444BC00683CBD /* Phenotypes.swift in Sources */,
+				201885921FA5983200A2EC26 /* QuestionnaireViewController.swift in Sources */,
+				2023B8FB1FA42ECE00AEA52F /* AppDelegate.swift in Sources */,
+				205321F31FA43C3F00683CBD /* DictionaryViewController.swift in Sources */,
+				8ECF42911FA547E400549FA9 /* QuestionPageView.swift in Sources */,
+				201885901FA5983200A2EC26 /* QuestionViewController.swift in Sources */,
+				205322031FA4568400683CBD /* SexLinkedDominant.swift in Sources */,
+				8ECF428C1FA547E400549FA9 /* LoadingViewController.swift in Sources */,
+				205321F51FA4412400683CBD /* Questions.swift in Sources */,
+				201885961FA59D2900A2EC26 /* DiseaseDict.swift in Sources */,
+				205321FF1FA4515900683CBD /* Genotypes.swift in Sources */,
+				201885891FA5762000A2EC26 /* DetailedViewController.swift in Sources */,
+				205322091FA459B000683CBD /* SexLinkedRecessive.swift in Sources */,
+				20E5528E1FA4BBF30018A5D0 /* Type.swift in Sources */,
+				2023B8FD1FA42ECE00AEA52F /* YourViewController.swift in Sources */,
+				205322011FA4562900683CBD /* AutosomalRecessive.swift in Sources */,
+				20E552901FA4C8B80018A5D0 /* SwiftyJson.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2023B9091FA42ECE00AEA52F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2023B9121FA42ECE00AEA52F /* HerediscopeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2023B9141FA42ECF00AEA52F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2023B91D1FA42ECF00AEA52F /* HerediscopeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2023B90F1FA42ECE00AEA52F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2023B8F61FA42ECE00AEA52F /* Herediscope */;
+			targetProxy = 2023B90E1FA42ECE00AEA52F /* PBXContainerItemProxy */;
+		};
+		2023B91A1FA42ECF00AEA52F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2023B8F61FA42ECE00AEA52F /* Herediscope */;
+			targetProxy = 2023B9191FA42ECF00AEA52F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2023B9001FA42ECE00AEA52F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2023B9011FA42ECE00AEA52F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2023B9051FA42ECE00AEA52F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2023B9061FA42ECE00AEA52F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2023B91F1FA42ECF00AEA52F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2023B9201FA42ECF00AEA52F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2023B9221FA42ECF00AEA52F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3LW8V63798;
+				INFOPLIST_FILE = Herediscope/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = genesis.Herediscope;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		2023B9231FA42ECF00AEA52F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3LW8V63798;
+				INFOPLIST_FILE = Herediscope/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = genesis.Herediscope;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		2023B9251FA42ECF00AEA52F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 3LW8V63798;
+				INFOPLIST_FILE = HerediscopeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = genesis.HerediscopeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Herediscope.app/Herediscope";
+			};
+			name = Debug;
+		};
+		2023B9261FA42ECF00AEA52F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 3LW8V63798;
+				INFOPLIST_FILE = HerediscopeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = genesis.HerediscopeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Herediscope.app/Herediscope";
+			};
+			name = Release;
+		};
+		2023B9281FA42ECF00AEA52F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 3LW8V63798;
+				INFOPLIST_FILE = HerediscopeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = genesis.HerediscopeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = Herediscope;
+			};
+			name = Debug;
+		};
+		2023B9291FA42ECF00AEA52F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 3LW8V63798;
+				INFOPLIST_FILE = HerediscopeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = genesis.HerediscopeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = Herediscope;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2023B8F21FA42ECE00AEA52F /* Build configuration list for PBXProject "Herediscope" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2023B91F1FA42ECF00AEA52F /* Debug */,
+				2023B9201FA42ECF00AEA52F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2023B9211FA42ECF00AEA52F /* Build configuration list for PBXNativeTarget "Herediscope" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2023B9221FA42ECF00AEA52F /* Debug */,
+				2023B9231FA42ECF00AEA52F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2023B9241FA42ECF00AEA52F /* Build configuration list for PBXNativeTarget "HerediscopeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2023B9251FA42ECF00AEA52F /* Debug */,
+				2023B9261FA42ECF00AEA52F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2023B9271FA42ECF00AEA52F /* Build configuration list for PBXNativeTarget "HerediscopeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2023B9281FA42ECF00AEA52F /* Debug */,
+				2023B9291FA42ECF00AEA52F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2023B8EF1FA42ECE00AEA52F /* Project object */;
+}
